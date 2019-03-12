@@ -1,0 +1,54 @@
+// Intro
+
+.intro {
+  height: 0;
+  padding-bottom: 50%;
+  position: relative;
+  background-image: image-url('cake.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.splash {
+  color: white;
+  background-color: rgba(20,10,10,0.7);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+  
+  > .logotype {
+    position: absolute;
+    top: 33%;
+    left: 33%;
+    right: 33%;
+    
+    > h1 {
+      font-size: 50px;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid white;
+    }
+    > h2 {
+      font-size: 30px;
+      border-bottom: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .splash > .logotype {
+    position: absolute;
+    top: 33%;
+    left: auto;
+    right: auto;
+    width: 100%;
+    padding: 0 10%; 
+  }
+}

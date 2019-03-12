@@ -1,0 +1,19 @@
+// Typography
+
+body {
+  font-family: $body-text;
+  letter-spacing: $body-spacing;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-family: $heading-text;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}
+  h2, h3, h4, h5, h6 {
+    @extend h1;
+    letter-spacing: 3px;
+  }

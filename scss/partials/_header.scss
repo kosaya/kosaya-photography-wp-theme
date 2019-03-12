@@ -1,0 +1,77 @@
+// Header
+
+$nav-height: 50px;
+
+.header {
+  color: black;
+  background-color: white;
+  border-top: 2px solid $berryred;
+  box-shadow: 0 2px 1px rgba(0,0,0,0.1);
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+  .header.scroll-fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+
+.logo h1 {
+  color: black;
+  line-height: $nav-height;
+  margin: 0;
+}
+
+.navigation {
+  float: right;
+  letter-spacing: 2px;
+  >.nav>li>a {
+    color: black;
+    &:hover, &:focus {
+      color: $berryred;
+      background-color: transparent;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .navigation {
+    float: none;
+    clear: both;
+    >.nav {
+      display: none;
+      margin: 0;
+      padding: 0 20px;
+      text-align: center;
+      background-color: $charcoal;
+      border-bottom: 2px solid white;
+    }
+    >.nav>li>a {
+      color: $honeyyellow;
+      &:hover, &:focus {
+        color: $berryred;
+        background-color: transparent;
+      }
+    }
+    >.nav.open {
+      display: block;
+    }
+  }
+}
+
+.menu-button {
+  color: black;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: $nav-height;
+  padding: 0 20px;
+  &:hover, &:focus {
+    color: $berryred;
+    text-decoration: none;
+  }
+}

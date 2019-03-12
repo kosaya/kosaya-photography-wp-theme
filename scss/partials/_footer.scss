@@ -1,0 +1,14 @@
+// Footer
+
+.footer {
+  padding: 20px;
+  background-color: $berryred;
+  border-top: 2px solid rgba(0,0,0,0.1);
+  color: white;
+  a {
+    color: $honeyyellow;
+    &:hover {
+      color: $olive; 
+    }
+  }
+}
